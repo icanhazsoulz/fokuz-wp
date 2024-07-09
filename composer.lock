@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37ebb6513e9aac1f2c67ab14ae744ad8",
+    "content-hash": "2a34f3ffd6d9fe52f329189f8f96e266",
     "packages": [
         {
             "name": "brick/math",
@@ -6427,6 +6427,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/kadence-blocks/"
+        },
+        {
+            "name": "wpackagist-plugin/lazy-blocks",
+            "version": "3.7.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/lazy-blocks/",
+                "reference": "tags/3.7.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/lazy-blocks.3.7.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/lazy-blocks/"
         },
         {
             "name": "wpackagist-plugin/megamenu",

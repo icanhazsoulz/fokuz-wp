@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a34f3ffd6d9fe52f329189f8f96e266",
+    "content-hash": "ea160c0e915fe8feae160b75155a82ac",
     "packages": [
         {
             "name": "brick/math",
@@ -6411,22 +6411,22 @@
             "time": "2022-03-08T17:03:00+00:00"
         },
         {
-            "name": "wpackagist-plugin/kadence-blocks",
-            "version": "3.2.48",
+            "name": "wpackagist-plugin/advanced-database-cleaner",
+            "version": "3.1.4",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/kadence-blocks/",
-                "reference": "tags/3.2.48"
+                "url": "https://plugins.svn.wordpress.org/advanced-database-cleaner/",
+                "reference": "tags/3.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.3.2.48.zip"
+                "url": "https://downloads.wordpress.org/plugin/advanced-database-cleaner.3.1.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/kadence-blocks/"
+            "homepage": "https://wordpress.org/plugins/advanced-database-cleaner/"
         },
         {
             "name": "wpackagist-plugin/lazy-blocks",
@@ -6463,42 +6463,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/megamenu/"
-        },
-        {
-            "name": "wpackagist-plugin/nextgen-gallery",
-            "version": "3.59.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/nextgen-gallery/",
-                "reference": "tags/3.59.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/nextgen-gallery.3.59.3.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/nextgen-gallery/"
-        },
-        {
-            "name": "wpackagist-plugin/smart-slider-3",
-            "version": "3.5.1.23",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/smart-slider-3/",
-                "reference": "tags/3.5.1.23"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/smart-slider-3.3.5.1.23.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/smart-slider-3/"
         },
         {
             "name": "wpackagist-plugin/sticky-menu-or-anything-on-scroll",

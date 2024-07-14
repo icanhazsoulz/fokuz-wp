@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea160c0e915fe8feae160b75155a82ac",
+    "content-hash": "fe11ecc2d20dbe0a5d0ae2ae4e36ff43",
     "packages": [
         {
             "name": "brick/math",
@@ -6499,6 +6499,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ultimate-addons-for-gutenberg/"
+        },
+        {
+            "name": "wpackagist-plugin/website-builder",
+            "version": "3.0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/website-builder/",
+                "reference": "tags/3.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/website-builder.3.0.4.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/website-builder/"
         },
         {
             "name": "wpackagist-plugin/wordfence",

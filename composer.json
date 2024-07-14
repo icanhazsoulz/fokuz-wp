@@ -13,7 +13,7 @@
     {
       "name": "Ben Word",
       "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "homepage": "https://gidothub.com/retlehs"
     }
   ],
   "keywords": [
@@ -42,15 +42,14 @@
     "roots/wp-password-bcrypt": "1.1.0",
     "wpackagist-theme/twentytwentyfour": "^1.0",
     "roots/acorn": "^4.3",
-    "wpackagist-plugin/kadence-blocks": "^3.2",
     "wpackagist-plugin/megamenu": "^3.3",
-    "wpackagist-plugin/nextgen-gallery": "^3.59",
-    "wpackagist-plugin/smart-slider-3": "^3.5",
     "wpackagist-plugin/sticky-menu-or-anything-on-scroll": "^2.33",
     "wpackagist-plugin/ultimate-addons-for-gutenberg": "^2.14",
     "wpackagist-plugin/wordfence": "^7.11",
     "wpackagist-plugin/wordpress-seo": "^23.0",
-    "wpackagist-plugin/lazy-blocks": "^3.7"
+    "wpackagist-plugin/lazy-blocks": "^3.7",
+    "wpackagist-plugin/advanced-database-cleaner": "^3.1",
+    "wpackagist-plugin/website-builder": "^3.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",

@@ -9,18 +9,17 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "IBM Plex Mono";
-  margin-bottom: 2rem !important;
+  margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 6rem;
   font-weight: 500;
-  margin-right: -2rem;
 }
 
 .heading-condensed {
   word-spacing: -2rem;
-  letter-spacing: -0.5rem;
+  letter-spacing: -0.25rem;
 }
 
 h3 {
@@ -38,16 +37,6 @@ p {
 .box-rounded-bottom {
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
-}
-
-.shift-top-sm {
-  position: relative;
-  top: -1.75rem;
-}
-
-.shift-top-md {
-  position: relative;
-  top: -3rem;
 }
 
 img {
@@ -81,10 +70,6 @@ img {
   left: 15%;
   top: 75%;
   z-index: 999;
-}
-
-.heading-link {
-  color: #fff;
 }
 
 .heading-link::after {

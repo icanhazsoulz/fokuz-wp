@@ -14,6 +14,7 @@
       "defaultGradients": false,
       "defaultPalette": false,
       "duotone": [],
+      "link": true,
       "palette": [
         {
           "color": "#782aac",
@@ -81,6 +82,7 @@
     },
     "spacing": {
       "padding": true,
+      "margin": true,
       "units": [
         "px",
         "%",

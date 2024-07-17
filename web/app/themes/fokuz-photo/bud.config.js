@@ -58,6 +58,7 @@ export default async (app) => {
         defaultGradients: false,
         defaultPalette: false,
         duotone: [],
+        link: true,
       },
       custom: {
         spacing: {},
@@ -68,6 +69,7 @@ export default async (app) => {
       },
       spacing: {
         padding: true,
+        margin: true,
         units: ['px', '%', 'em', 'rem', 'vw', 'vh'],
       },
       typography: {

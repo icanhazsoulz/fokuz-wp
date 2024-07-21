@@ -33,7 +33,6 @@ function wz_multiple_blocks_register_blocks() {
 
 	// Register blocks in the format $dir => $render_callback.
 	$blocks = array(
-		'hero-bg' => '',
 	);
 
 	foreach ( $blocks as $dir => $render_callback ) {

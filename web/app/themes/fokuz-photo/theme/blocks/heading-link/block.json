@@ -1,0 +1,16 @@
+{
+	"name": "acf/page-link",
+	"title": "Page Link",
+	"description": "Link to a page",
+	"style": [ "file:./style.css" ],
+	"category": "formatting",
+	"icon": "admin-links",
+	"keywords": ["link"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "template.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}

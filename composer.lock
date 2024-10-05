@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29317996845d6c3018d0b1fb12b1075e",
+    "content-hash": "4a9025947fc95f7ad04765c1ccbf6dae",
     "packages": [
         {
             "name": "brick/math",
@@ -4010,7 +4010,7 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "6.6",
+            "version": "6.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
@@ -4041,7 +4041,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/6.6"
+                "source": "https://github.com/roots/wordpress/tree/6.6.2"
             },
             "funding": [
                 {
@@ -4124,22 +4124,22 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.6",
+            "version": "6.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "6.6"
+                "reference": "6.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-6.6-no-content.zip",
-                "shasum": "6c0d82185d47782aab67a72d07dee459f9f6ceba"
+                "url": "https://downloads.wordpress.org/release/wordpress-6.6.2-no-content.zip",
+                "shasum": "b496b8a9bb3c6d20a781344cbe3e189f7fd83871"
             },
             "require": {
-                "php": ">= 7.0.0"
+                "php": ">= 7.2.24"
             },
             "provide": {
-                "wordpress/core-implementation": "6.6"
+                "wordpress/core-implementation": "6.6.2"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -4190,7 +4190,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2024-07-16T16:26:38+00:00"
+            "time": "2024-09-10T15:25:31+00:00"
         },
         {
             "name": "roots/wp-config",
@@ -6412,15 +6412,15 @@
         },
         {
             "name": "wpackagist-plugin/advanced-database-cleaner",
-            "version": "3.1.4",
+            "version": "3.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/advanced-database-cleaner/",
-                "reference": "tags/3.1.4"
+                "reference": "tags/3.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-database-cleaner.3.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/advanced-database-cleaner.3.1.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -6429,34 +6429,70 @@
             "homepage": "https://wordpress.org/plugins/advanced-database-cleaner/"
         },
         {
-            "name": "wpackagist-plugin/lazy-blocks",
-            "version": "3.7.0",
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "5.9.8",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/lazy-blocks/",
-                "reference": "tags/3.7.0"
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/5.9.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/lazy-blocks.3.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.9.8.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/lazy-blocks/"
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
         },
         {
-            "name": "wpackagist-plugin/megamenu",
-            "version": "3.3.1",
+            "name": "wpackagist-plugin/custom-post-type-ui",
+            "version": "1.17.1",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/megamenu/",
-                "reference": "tags/3.3.1"
+                "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
+                "reference": "tags/1.17.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/megamenu.3.3.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.17.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
+        },
+        {
+            "name": "wpackagist-plugin/easy-fancybox",
+            "version": "2.3.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/easy-fancybox/",
+                "reference": "tags/2.3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/easy-fancybox.2.3.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/easy-fancybox/"
+        },
+        {
+            "name": "wpackagist-plugin/megamenu",
+            "version": "3.3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/megamenu/",
+                "reference": "tags/3.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/megamenu.3.3.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -6483,16 +6519,34 @@
             "homepage": "https://wordpress.org/plugins/sticky-menu-or-anything-on-scroll/"
         },
         {
-            "name": "wpackagist-plugin/ultimate-addons-for-gutenberg",
-            "version": "2.14.1",
+            "name": "wpackagist-plugin/sunshine-photo-cart",
+            "version": "3.2.11",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/ultimate-addons-for-gutenberg/",
-                "reference": "tags/2.14.1"
+                "url": "https://plugins.svn.wordpress.org/sunshine-photo-cart/",
+                "reference": "tags/3.2.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ultimate-addons-for-gutenberg.2.14.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/sunshine-photo-cart.3.2.11.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/sunshine-photo-cart/"
+        },
+        {
+            "name": "wpackagist-plugin/ultimate-addons-for-gutenberg",
+            "version": "2.15.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ultimate-addons-for-gutenberg/",
+                "reference": "tags/2.15.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ultimate-addons-for-gutenberg.2.15.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -6501,16 +6555,34 @@
             "homepage": "https://wordpress.org/plugins/ultimate-addons-for-gutenberg/"
         },
         {
-            "name": "wpackagist-plugin/website-builder",
-            "version": "3.0.4",
+            "name": "wpackagist-plugin/w3-total-cache",
+            "version": "2.7.6",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/website-builder/",
-                "reference": "tags/3.0.4"
+                "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
+                "reference": "tags/2.7.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/website-builder.3.0.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.2.7.6.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/w3-total-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/website-builder",
+            "version": "3.0.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/website-builder/",
+                "reference": "tags/3.0.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/website-builder.3.0.8.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -6538,15 +6610,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "23.0",
+            "version": "23.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/23.0"
+                "reference": "tags/23.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.23.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.23.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

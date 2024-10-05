@@ -1,0 +1,16 @@
+{
+	"name": "acf/heading-link",
+	"title": "Heading Link",
+	"description": "Heading linked to a page",
+	"style": [ "file:./style.css" ],
+	"category": "formatting",
+	"icon": "admin-links",
+	"keywords": ["heading", "link"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "template.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}

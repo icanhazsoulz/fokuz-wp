@@ -1,0 +1,104 @@
+@import 'common/fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 1160px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex Mono";
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.heading-condensed {
+  word-spacing: -2rem;
+  letter-spacing: -0.25rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.box-rounded {
+  border-radius: 18px;
+}
+
+.box-rounded-bottom {
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.hero-bg::before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  color: beige;
+  position: absolute;
+  right: 0;
+}
+
+.hero-bg::after {
+  content: "";
+}
+
+.dot-bg-partial::before {
+  content: "";
+  background-image: radial-gradient(circle at 2px 2px, white 2px, transparent 0);
+  background-size: 25px 25px;
+  position: absolute;
+  width: 33%;
+  height: 100%;
+}
+
+.hero-btn-container {
+  position: absolute;
+  left: 15%;
+  top: 75%;
+  z-index: 999;
+}
+
+.heading-link::after {
+  content: "\003E";
+}
+
+.page-link {
+  font-family: "IBM Plex Mono", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #fff;
+  opacity: 20%;
+}
+
+.post-card {
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px 0px #47255E47;
+}
+
+.image-card {
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0px 0px 30px 0px #280D3A5C;
+}
+.image-card figure {
+  display: flex;
+  flex-direction: column-reverse;
+}

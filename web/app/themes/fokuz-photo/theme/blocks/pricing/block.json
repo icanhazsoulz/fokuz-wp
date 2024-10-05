@@ -1,0 +1,16 @@
+{
+	"name": "acf/pricing",
+	"title": "Pricing",
+	"description": "Pricing for services",
+	"style": [ "file:./style.css" ],
+	"category": "formatting",
+	"icon": "format-image",
+	"keywords": ["pricing"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "template.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}

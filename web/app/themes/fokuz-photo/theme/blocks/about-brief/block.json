@@ -1,0 +1,16 @@
+{
+	"name": "acf/about-brief",
+	"title": "About",
+	"description": "Brief About block on the main page",
+	"style": [ "file:./style.css" ],
+	"category": "formatting",
+	"icon": "format-image",
+	"keywords": ["about"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "template.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}

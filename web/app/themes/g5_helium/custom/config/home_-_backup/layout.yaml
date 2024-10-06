@@ -10,10 +10,10 @@ layout:
       - owlcarousel-2455
   /intro/:
     -
-      - 2cols_w_image-5354
+      - custom-5807
   /features/:
     -
-      - pricing-5306
+      - custom-3119
   /utility/:
     -
       - contenttabs-3854
@@ -50,7 +50,7 @@ structure:
     type: section
     attributes:
       boxed: ''
-      class: ''
+      class: intro-test
       variations: ''
   features:
     type: section
@@ -116,42 +116,18 @@ content:
           linktext: 'Download Now'
           buttonclass: button-outline
           name: 'Item 2'
-  2cols_w_image-5354:
-    title: 'Two cols w/image'
+  custom-5807:
+    title: Intro
     attributes:
-      image: 'gantry-media://2024/07/85be8d9e-d82b-4faf-b25d-97c21db0ebd4-1.png'
-      link: /da-bin-ich
-      linktext: 'Da bin ich'
-      description: 'Willkommen in der Welt, in der Ihr Liebling zum Superstar wird! Ich bin Julia - eine Fotografin und Hundefachfrau mit Erfahrung in der Erstellung fröhlicher und bunter Fotoshootings mit Ihren Haustieren. In meiner Arbeit ist das Wichtigste für mich das Wohlbefinden und die Freude Ihrer Lieblinge. Ich freue mich darauf, Sie in meinem Fotostudio in Werdohl oder kann zu Ihnen an jeden Ort in Nordrhein-Westfalen kommen und meine magischen Werkzeuge mitbringen. Lassen Sie Ihre Lieblinge eine Rolle in einem bunten Spektakel spielen! Und ich werde Ihnen helfen, begeisterte Zuschauer zu werden.'
-  pricing-5306:
+      html: "<div class=\"fp-intro\">\n    <h2 class=\"g-title\">Build your beautiful theme, the way you want it, with Helium</h2>\n    <p>Craft memorable, emotive experiences with our Gantry 5 framework.</p>\n    <div class=\"ipad-mockup\">\n        <img src=\"gantry-media://intro/mockup.png\" alt=\"\" />\n    </div>\n</div>"
+    block:
+      variations: center
+  custom-3119:
+    title: Features
     attributes:
-      link: /was-kostet
-      linktext: 'Was kostet'
-      prices:
-        -
-          image: 'gantry-media://2024/07/studio.png'
-          description: 'Kein Weg ist mir zu weit, um deinen pelzigen Gefährten ins beste Licht zu rücken. Meine mobile Ausrüstung bringt die Magie des Studios direkt zu dir nach Hause – für unvergessliche Bilder voller Liebe und Freude.'
-          amount: '200'
-          id: ''
-          class: ''
-          variations: ''
-          title: Studio
-        -
-          image: 'gantry-media://2024/07/momente.png'
-          description: 'Natürliche Momente, unvergesslich festgehalten Ob im grünen Gras oder während des Lieblingsspiels – ich fange die Essenz deines Tieres in seiner gewohnten Umgebung ein. Authentisch und lebendig.'
-          amount: '150'
-          id: ''
-          class: ''
-          variations: ''
-          title: Momente
-        -
-          image: 'gantry-media://2024/07/reportage.png'
-          description: 'Als stille Beobachterin halte ich die Highlights und die unbezahlbaren kleinen Momente deines besonderen Anlasses fest. Dein Event wird durch meine Linse lebendig und bleibt für immer in Erinnerung.'
-          amount: '200'
-          id: ''
-          class: ''
-          variations: ''
-          title: Reportage
+      html: "<div class=\"fp-features\">\n    <div class=\"g-grid\">\n        <div class=\"g-block size-33-3\">\n            <div class=\"card\">\n                <div class=\"card-block\">\n                    <i class=\"fa fa-joomla fab fab-joomla\"></i>\n                    <h4 class=\"card-title\">Joomla</h4>\n                    <p class=\"card-text\">Bring your website to life with one of the most powerful and popular theming frameworks for Joomla.</p>\n                </div>\n            </div>\n        </div>\n        <div class=\"g-block size-33-3\">\n            <div class=\"card\">\n                <div class=\"card-block\">\n                    <i class=\"fa fa-wordpress fab fab-wordpress\"></i>\n                    <h4 class=\"card-title\">WordPress</h4>\n                    <p class=\"card-text\">Gantry extends WordPress' native functionality, empowering users to manipulate virtually every aspect of their visitors' experience.</p>\n                </div>\n            </div>\n        </div>\n        <div class=\"g-block size-33-3\">\n            <div class=\"card\">\n                <div class=\"card-block\">\n                    <i class=\"fa fa-grav fab fab-grav\"></i>\n                    <h4 class=\"card-title\">Grav</h4>\n                    <p class=\"card-text\">Gantry 5 is the first theming framework for Grav, designed by members of the same team that developed the CMS.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+    block:
+      variations: center
   contenttabs-3854:
     title: 'Content Tabs'
     attributes:

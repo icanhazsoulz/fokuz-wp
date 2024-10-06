@@ -1,5 +1,5 @@
 name: home_-_particles
-timestamp: 1728062952
+timestamp: 1728211722
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -31,15 +31,17 @@ particles:
     social-6316: Social
   owlcarousel:
     owlcarousel-2455: 'Owl Carousel'
-  custom:
-    custom-5807: Intro
-    custom-3119: Features
-    custom-7658: 'Customer Testimonials'
-    custom-6355: 'Develop CMS themes quickly'
+  2cols_w_image:
+    2cols_w_image-5354: 'Two cols w/image'
+  pricing:
+    pricing-5306: Pricing
   contenttabs:
     contenttabs-3854: 'Content Tabs'
   contentcubes:
     contentcubes-7850: 'Content Cubes'
+  custom:
+    custom-7658: 'Customer Testimonials'
+    custom-6355: 'Develop CMS themes quickly'
   copyright:
     copyright-1352: Copyright
   horizontalmenu:

@@ -27,7 +27,7 @@ form:
       description: Customize the link text.
       overridable: false
 
-    samples:
+    prices:
       type: collection.list
       array: true
       label: Sample Items
@@ -49,7 +49,7 @@ form:
           type: textarea.textarea
           label: Description
 
-        .price:
+        .amount:
           type: input.number
           label: Price
 

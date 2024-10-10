@@ -109,59 +109,25 @@
   src: url('../fonts/roboto-v30-latin_latin-ext-700italic.woff2') format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+body {
+  color: #300E47;
+}
 .link-heading::after {
-  content: "›";
+  content: " ›";
 }
 .button {
   border-radius: 5px;
-  padding: 1.25rem 3.125rem;
-  text-transform: none;
-  font-size: 1rem;
-}
-.link-opaque {
-  font-family: "IBM Plex Mono", serif;
-  font-size: 40px;
-  font-weight: 500;
-  color: #fff;
-  opacity: 40%;
 }
 .heading {
   font-family: "IBM Plex Mono", serif;
   font-weight: 500;
 }
-.heading-sub {
-  color: #300e47;
-  background-color: #fff;
-  font-weight: 700;
-  padding: 4px 12px;
-  border-radius: 5px;
-  font-size: 40px;
-}
-@media screen and (max-width: 768px) {
-  .heading-sub {
-    line-height: 1.5;
-    font-size: 36px;
-  }
-}
 .heading-large {
   font-size: 96px;
-  line-height: 1.25;
-}
-@media screen and (max-width: 576px) {
-  .heading-large {
-    font-size: 42px;
-  }
 }
 .heading-medium {
   font-size: 40px;
   font-weight: 400;
-  line-height: 1.5;
-}
-@media screen and (max-width: 768px) {
-  .heading-medium {
-    font-size: 36px;
-    line-height: 1.25;
-  }
 }
 .heading-small {
   font-size: 24px;
@@ -175,63 +141,4 @@
 .g-wrapper {
   margin: 0 auto;
 }
-.hero-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.hero-wrapper::before {
-  content: "";
-  position: absolute;
-  top: -1rem;
-  right: 150px;
-  z-index: 0;
-  display: block;
-  width: 300px;
-  height: 330px;
-  background-color: #eddeba;
-}
-.hero-wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: -1rem;
-  left: 150px;
-  z-index: 0;
-  display: block;
-  width: 300px;
-  height: 330px;
-  background-color: #fff;
-}
-.g-owlcarousel .owl-dots {
-  bottom: 2%;
-}
-.g-owlcarousel .g-owlcarousel-item-wrapper .g-owlcarousel-item-content-container .g-owlcarousel-item-content-wrapper {
-  align-items: end;
-}
-.g-owlcarousel .owl-dots .owl-dot {
-  width: 8px;
-  height: 8px;
-}
-.carousel-img {
-  border-radius: 5px;
-}
-.carousel-img-hero {
-  height: 75vh;
-  object-fit: cover;
-}
-.bg-red {
-  padding: 40px;
-  border-radius: 18px;
-  background-color: #db3326;
-}
-.bg-red .heading {
-  color: #ffffff;
-}
-.bg-white {
-  padding: 80px 40px;
-  border-radius: 18px;
-  background-color: #ffffff;
-}
-/*# sourceMappingURL=custom_home_-_particles.css.map */
+/*# sourceMappingURL=custom__body_only.css.map */

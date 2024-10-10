@@ -1,0 +1,39 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+<div class="g-contentcubes {{ particle.css.class }}">
+
+    {% if particle.items %}
+    {% set counter = 1 %}
+        {% for item in particle.items %}
+            <div class="g-grid">
+                <div class="g-block size-50">
+                    <div class="g-content image-position-{{ item.imageposition }}">
+                        {% if counter == 1 %}
+                            {% if particle.title %}<a href="{{ particle.link|e }}"><h2 class="heading heading-large link-heading">{{ particle.title|e }}</h2></a>{% endif %}
+                        {% endif %}
+                        {% set counter = counter + 1 %}
+                        <div class="g-card">
+                            <div class="g-wrapper">
+                                {% if item.name %}<div class="heading heading-medium">{{ item.name|raw }}</div>{% endif %}
+                                {% if item.image %}<img src="{{ url(item.image) }}" alt="{{ item.name|e }}" />{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-block size-50">
+                    <div class="g-content">
+                        {% if item.desc %}<div class="">{{ item.desc|raw }}</div>{% endif %}
+                        {% for image in item.images %}
+                            <img src="{{ url(image.image) }}" alt="Clickable image" />
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    {% endif %}
+</div>
+
+{% endblock %}

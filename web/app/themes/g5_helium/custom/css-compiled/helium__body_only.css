@@ -896,7 +896,7 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   border-left: none;
 }
 .g-home-particles.g-helium-style .fp-testimonials blockquote p {
-  color: #ffffff;
+  color: #eceeef;
 }
 .g-home-particles.g-helium-style .fp-testimonials blockquote footer:after {
   display: block;
@@ -958,6 +958,23 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   padding: 3rem 0;
   position: relative;
   z-index: 10;
+  background-image: url('../../images/header/img01.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#g-header:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+  opacity: 0.85;
+  background: linear-gradient(40deg, #782aac, #8f4dae);
 }
 #g-header a {
   color: rgba(236, 238, 239, 0.6);
@@ -1267,8 +1284,8 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   margin-right: -0.1rem;
 }
 #g-intro {
-  background: #db3326;
-  color: #ffffff;
+  background: #f4f5f7;
+  color: #424753;
   padding: 3rem 0;
 }
 @media print {
@@ -1311,11 +1328,24 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   }
 }
 #g-testimonials {
-  background: #782aac;
-  color: #ffffff;
+  background: #8f4dae;
+  color: #eceeef;
   padding: 3rem 0;
   position: relative;
   z-index: 10;
+  background: url('../../images/testimonials/img01.jpg') no-repeat center top;
+  background-size: cover;
+}
+#g-testimonials:before {
+  background: linear-gradient(40deg, #782aac, #8f4dae);
+  opacity: 0.9;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 #g-testimonials a {
   color: #aa63d9;
@@ -2560,4 +2590,4 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
     text-align: inherit !important;
   }
 }
-/*# sourceMappingURL=helium_home_-_particles.css.map */
+/*# sourceMappingURL=helium__body_only.css.map */

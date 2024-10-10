@@ -1,0 +1,33 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div class="">
+		{% if particle.title %}
+			<div class="g-grid">
+				<div class="g-block">
+					<div class="g-content">
+						<a href="{{ particle.link|e }}"><h2 class="heading heading-large link-heading">{{ particle.title|e }}</h2></a>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+
+		{% for item in particle.content %}
+			<div class="g-grid">
+				<div class="g-block size-50">
+					<div class="g-content">
+						{% if item.image %}<img src="{{ url(item.image) }}" class="" alt="{{ item.imagealt|e }}" />{% endif %}
+					</div>
+				</div>
+				<div class="g-block size-50">
+					<div class="g-content">
+						{% if item.name %}<h3>{{ item.name|raw }}</h3>{% endif %}
+						{% if item.date %}<span>{{ item.date|raw }}</span>{% endif %}
+						{% if item.desc %}<div class="">{{ item.desc|raw }}</div>{% endif %}
+						{% if item.linktext %}<a href="{{ item.link|e }}" class="link-opaque link-opaque-gray">{{ item.linktext|raw }}</a>{% endif %}
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

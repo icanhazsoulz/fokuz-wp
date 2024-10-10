@@ -1,16 +1,16 @@
 preset: preset1
 base:
   background: '#ffffff'
-  text-color: '#424753'
+  text-color: '#300e47'
 accent:
-  color-1: '#4db2b3'
+  color-1: '#782aac'
   color-2: '#8f4dae'
 font:
   family-default: 'Raleway, Helvetica, Tahoma, Geneva, Arial, sans-serif'
   family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
 link:
-  regular: '#4db2b3'
-  hover: '#424753'
+  regular: '#300e47'
+  hover: '#6b2699'
 navigation:
   background: '#312f38'
   text-color: '#ffffff'
@@ -24,7 +24,7 @@ intro:
   text-color: '#424753'
 features:
   background: '#ffffff'
-  text-color: '#424753'
+  text-color: '#300e47'
 utility:
   background: '#424753'
   text-color: '#ffffff'

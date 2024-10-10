@@ -5,7 +5,7 @@
 		<div class="g-grid">
 			<div class="g-block">
 				<div class="g-content">
-					{% if particle.linktext %}<a href="{{ particle.link|e }}"><h2 class="heading heading-large link-heading">{{ particle.linktext|e }}</h2></a>{% endif %}
+					{% if particle.linktext %}<a href="{{ particle.link|e }}"><h2 class="link-heading">{{ particle.linktext|e }}</h2></a>{% endif %}
 				</div>
 			</div>
 		</div>
@@ -15,9 +15,9 @@
 					 class="g-block {{ price.class }} {{ price.variations }}">
 					<div class="g-content">
 						{% if price.image %}<img src="{{ url(price.image) }}" class="" alt="{{ price.title|e }}" />{% endif %}
-						<div class="heading heading-medium">{{ price.title|raw }}</div>
-						<p>{{ price.description|raw }}</p>
-						<div><span class="heading heading-small">ab</span> <span class="heading heading-medium">{{ price.amount|raw }} €</span></div>
+						<h4>{{ price.title|raw }}</h4>
+						{{ price.description|raw }}
+						<div>ab {{ price.amount|raw }} €</div>
 						<a href="#" class="button">{{ 'Jetzt buchen'|escape }}</a>
 					</div>
 				</div>

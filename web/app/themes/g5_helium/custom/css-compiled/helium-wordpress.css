@@ -105,7 +105,7 @@ legend small {
   margin: 0.625rem 0;
 }
 #g-page-surround .search-form input.search-field {
-  color: #424753;
+  color: #300e47;
 }
 .pagination ul.pagination-list, .page-links ul.pagination-list {
   font-size: 0;
@@ -245,13 +245,13 @@ legend small {
   color: #000000;
 }
 #comments ol.commentlist li.comment .comment-author .author-meta .author-name a:hover {
-  color: #4db2b3;
+  color: #782aac;
 }
 #comments ol.commentlist li.comment .comment-author .author-meta time a, #comments ol.commentlist li.comment .comment-author .author-meta .edit-link a {
-  color: #424753;
+  color: #300e47;
 }
 #comments ol.commentlist li.comment .comment-author .author-meta time a:hover, #comments ol.commentlist li.comment .comment-author .author-meta .edit-link a:hover {
-  color: #4db2b3;
+  color: #782aac;
 }
 @media only all and (max-width: 47.99rem) {
   #comments ol.commentlist li.comment .comment-author .author-meta time, #comments ol.commentlist li.comment .comment-author .author-meta .edit-link {
@@ -259,10 +259,10 @@ legend small {
   }
 }
 #comments ol.commentlist li.comment.bypostauthor > .comment-body > .comment-author .author-name a {
-  color: #4db2b3;
+  color: #782aac;
 }
 #comments ol.commentlist li.comment.bypostauthor > .comment-body > .comment-author .author-name a:hover {
-  color: #424753;
+  color: #300e47;
 }
 #comments ol.commentlist li.comment .comment-content {
   overflow: hidden;
@@ -311,7 +311,7 @@ legend small {
   display: inline-block;
   font-family: "Lato", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   border-radius: 0.25rem;
-  background: #4db2b3;
+  background: #782aac;
   color: #ffffff;
   padding: 5px 8px;
   margin: 0 4px 8px 0;
@@ -324,7 +324,7 @@ legend small {
   content: "";
 }
 .widget.widget_tag_cloud a:hover {
-  background: #3d8f90;
+  background: #5b2083;
   color: #ffffff;
 }
 .widget.widget_calendar {

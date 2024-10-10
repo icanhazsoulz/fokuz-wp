@@ -1,5 +1,5 @@
 name: home_-_particles
-timestamp: 1728211722
+timestamp: 1728593529
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -9,10 +9,13 @@ positions: {  }
 sections:
   navigation: Navigation
   intro: Intro
+  pricing: Pricing
   features: Features
-  utility: Utility
-  above: Above
   testimonials: Testimonials
+  utility1: Utility1
+  info: Info
+  utility2: Utility2
+  above: Above
   expanded: Expanded
   header: Header
   mainbar: Mainbar
@@ -35,13 +38,17 @@ particles:
     2cols_w_image-5354: 'Two cols w/image'
   pricing:
     pricing-5306: Pricing
+  contentcubes:
+    contentcubes-6469: 'Content Cubes'
+  testimonials_carousel:
+    testimonials_carousel-4183: 'Testimonials Carousel'
+  custom:
+    custom-9685: 'Custom HTML'
+    custom-9485: 'Custom HTML'
+  content_repeater:
+    content_repeater-7607: 'Content repeater'
   contenttabs:
     contenttabs-3854: 'Content Tabs'
-  contentcubes:
-    contentcubes-7850: 'Content Cubes'
-  custom:
-    custom-7658: 'Customer Testimonials'
-    custom-6355: 'Develop CMS themes quickly'
   copyright:
     copyright-1352: Copyright
   horizontalmenu:

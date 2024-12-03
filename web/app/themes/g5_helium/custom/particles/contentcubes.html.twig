@@ -5,32 +5,49 @@
 <div class="g-contentcubes {{ particle.css.class }}">
 
     {% if particle.items %}
-    {% set counter = 1 %}
+    {% set item_counter = 1 %}
         {% for item in particle.items %}
             <div class="g-grid">
-                <div class="g-block size-50">
-                    <div class="g-content image-position-{{ item.imageposition }}">
-                        {% if counter == 1 %}
+                <div class="g-block size-50 image-position-{{ item.imageposition }}">
+                    <div class="g-content">
+                        {% if item_counter == 1 %}
                             {% if particle.title %}<a href="{{ particle.link|e }}"><h2 class="heading heading-large link-heading">{{ particle.title|e }}</h2></a>{% endif %}
                         {% endif %}
-                        {% set counter = counter + 1 %}
-                        <div class="g-card">
-                            <div class="g-wrapper">
-                                {% if item.name %}<div class="heading heading-medium">{{ item.name|raw }}</div>{% endif %}
-                                {% if item.image %}<img src="{{ url(item.image) }}" alt="{{ item.name|e }}" />{% endif %}
+                        <div class="d-flex">
+                            <div class="g-card">
+                                <div class="g-card-content-wrapper">
+                                    {% if item.name %}<h3 class="heading heading-medium">{{ item.name|raw }}</h3>{% endif %}
+                                    {% if item.image %}
+                                        <a href="{{ url(item.image) }}" class="fancybox">
+                                            <img src="{{ url(item.thumbnail) }}" alt="{{ item.name|e }}" />
+                                        </a>
+                                    {% endif %}
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="g-block size-50">
                     <div class="g-content">
                         {% if item.desc %}<div class="">{{ item.desc|raw }}</div>{% endif %}
+                        {% set image_counter = 1 %}
                         {% for image in item.images %}
-                            <img src="{{ url(image.image) }}" alt="Clickable image" />
+                            {% if item_counter % 2 == 1 %}
+                            <div class="d-flex {% if image_counter % 2 == 1 %}justify-content-end{% endif %}">
+                            {% else %}
+                            <div class="d-flex {% if image_counter % 2 == 0 %}justify-content-end{% endif %}">
+                            {% endif %}
+                                <a href="{{ url(image.image) }}" class="fancybox size-45">
+                                    <img src="{{ url(image.thumbnail) }}" alt="{% if image.alttext %}{{ image.alttext|raw }}{% else %}Clickable image{% endif %}" />
+                                </a>
+                            </div>
+                            {% set image_counter = image_counter + 1 %}
                         {% endfor %}
                     </div>
                 </div>
             </div>
+            {% set item_counter = item_counter + 1 %}
         {% endfor %}
 
     {% endif %}

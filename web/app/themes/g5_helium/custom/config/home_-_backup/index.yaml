@@ -1,5 +1,5 @@
 name: home_-_backup
-timestamp: 1728258071
+timestamp: 1732491285
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -40,10 +40,11 @@ particles:
     menu-2185: Menu
   social:
     social-8734: Social
-  copyright:
-    copyright-9895: Copyright
-  horizontalmenu:
-    horizontalmenu-4514: 'Horizontal Menu'
+  verticalmenu:
+    verticalmenu-7948: 'Vertical Menu'
+    verticalmenu-6922: 'Vertical Menu'
+  contact:
+    contact-1311: Contact
   totop:
     totop-4588: 'To Top'
   mobile-menu:
@@ -58,7 +59,8 @@ inherit:
     menu-2185: menu-6409
     social-8734: social-3171
     logo-4350: logo-9571
-    copyright-9895: copyright-1736
-    horizontalmenu-4514: horizontalmenu-9034
+    verticalmenu-7948: verticalmenu-3628
+    verticalmenu-6922: verticalmenu-6607
+    contact-1311: contact-6866
     totop-4588: totop-8670
     mobile-menu-4582: mobile-menu-5697

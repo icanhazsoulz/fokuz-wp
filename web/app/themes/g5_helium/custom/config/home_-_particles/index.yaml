@@ -1,5 +1,5 @@
 name: home_-_particles
-timestamp: 1728593529
+timestamp: 1732491285
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -23,15 +23,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  messages:
-    system-messages-8010: 'System Messages'
-  logo:
-    logo-3240: 'Logo / Image'
-    logo-6444: 'Logo / Image'
-  menu:
-    menu-1749: Menu
-  social:
-    social-6316: Social
   owlcarousel:
     owlcarousel-2455: 'Owl Carousel'
   2cols_w_image:
@@ -49,10 +40,20 @@ particles:
     content_repeater-7607: 'Content repeater'
   contenttabs:
     contenttabs-3854: 'Content Tabs'
-  copyright:
-    copyright-1352: Copyright
-  horizontalmenu:
-    horizontalmenu-4139: 'Horizontal Menu'
+  messages:
+    system-messages-8010: 'System Messages'
+  logo:
+    logo-3240: 'Logo / Image'
+    logo-6444: 'Logo / Image'
+  menu:
+    menu-1749: Menu
+  social:
+    social-6316: Social
+  verticalmenu:
+    verticalmenu-5290: 'Vertical Menu'
+    verticalmenu-9221: 'Vertical Menu'
+  contact:
+    contact-8278: Contact
   totop:
     totop-1314: 'To Top'
   mobile-menu:
@@ -60,14 +61,16 @@ particles:
 inherit:
   default:
     navigation: navigation
+    expanded: expanded
+    footer: footer
+    offcanvas: offcanvas
     system-messages-8010: system-messages-7972
     logo-3240: logo-9608
     menu-1749: menu-6409
     social-6316: social-3171
-    footer: footer
     logo-6444: logo-9571
-    copyright-1352: copyright-1736
-    horizontalmenu-4139: horizontalmenu-9034
+    verticalmenu-5290: verticalmenu-3628
+    verticalmenu-9221: verticalmenu-6607
+    contact-8278: contact-6866
     totop-1314: totop-8670
-    offcanvas: offcanvas
     mobile-menu-8964: mobile-menu-5697

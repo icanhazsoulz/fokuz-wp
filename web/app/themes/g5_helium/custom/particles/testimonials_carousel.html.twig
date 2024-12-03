@@ -21,13 +21,15 @@
                         <div class="g-grid">
                             <div class="g-block size-50">
                                 <div class="g-content">
-                                    {% if item.image %}<img src="{{ url(item.image) }}" class="carousel-img" alt="{{ item.name|e }}" />{% endif %}
+                                    {% if item.image %}<img src="{{ url(item.image) }}" class="carousel-img" alt="{{ item.name|e }}" width="560" height="400">{% endif %}
                                 </div>
                             </div>
                             <div class="g-block size-50">
                                 <div class="g-content">
-                                    {% if item.name %}<h3>{{ item.name|raw }}</h3>{% endif %}
-                                    {% if item.date %}<span>{{ item.date|raw }}</span>{% endif %}
+                                    <div class="g-content-meta">
+                                        {% if item.name %}<h3>{{ item.name|raw }}</h3>{% endif %}
+                                        {% if item.date %}<span>{{ item.date|raw }}</span>{% endif %}
+                                    </div>
                                     {% if item.desc %}
                                         <p>{{ item.desc|raw }}{% endif %}</p>
                                     {% if item.link %}
@@ -43,7 +45,7 @@
                         <div class="g-grid">
                             <div class="g-block">
                                 <div class="g-content">
-                                    <a href="#" class="link-opaque">Mehr sehen</a>
+                                    <a href="{{ particle.link|e }}" class="link-opaque">Mehr sehen</a>
                                 </div>
                             </div>
                         </div>

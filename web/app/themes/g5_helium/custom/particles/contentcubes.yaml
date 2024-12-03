@@ -43,10 +43,14 @@ form:
       fields:
         .name:
           type: input.text
+        .thumbnail:
+          type: input.imagepicker
+          label: Image thumbnail
+          description: Select the thumbnail.
         .image:
           type: input.imagepicker
           label: Image
-          description: Select desired image.
+          description: Select the full size image.
         .imageposition:
           type: select.select
           label: Image Position
@@ -68,7 +72,15 @@ form:
           ajax: true
 
           fields:
+            .thumbnail:
+              type: input.imagepicker
+              label: Image thumbnail
+              description: Select the thumbnail.
             .image:
               type: input.imagepicker
               label: Image
-              description: Select the image.
+              description: Select the full size image.
+            .alttext:
+              type: input.text
+              label: Alt text
+              description: Enter the alternative text

@@ -87,15 +87,14 @@ form:
           type: input.imagepicker
           label: Image
           description: Select desired image.
-        .title:
+        .line1:
           type: input.text
-          label: Title
-          description: Enter the title
-        .desc:
-          type: textarea.textarea
-          label: Description
-          description: Customize the description.
-          placeholder: Enter short description
+          label: Line 1
+          description: Title line 1
+        .line2:
+          type: input.text
+          label: Line 2
+          description: Title line 2
         .link:
           type: input.text
           label: Link
@@ -104,11 +103,6 @@ form:
           type: input.text
           label: Link Text
           description: Input the text for the item link.
-        .buttonclass:
-          type: input.text
-          label: Button Class
-          description: Input the button class.
-          default: 'button-outline'
         .disable:
           type: input.checkbox
           label: Disable

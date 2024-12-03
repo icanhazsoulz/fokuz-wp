@@ -13,15 +13,15 @@
                     <div class="g-owlcarousel-item {{ item.class|e }}">
                         <div class="g-owlcarousel-item-wrapper">
                             <div class="g-owlcarousel-item-img">
-                                <img src="{{ url(item.image)|e }}" alt="{{ item.title|e }}" class="carousel-img-hero" />
+                                <img src="{{ url(item.image)|e }}" alt="{{ item.title|e }}" class="carousel-img-hero" width="1200" height="745">
                             </div>
                             <div class="g-owlcarousel-item-content-container">
                                 <div class="g-owlcarousel-item-content-wrapper">
                                     <div class="g-owlcarousel-item-content">
-                                        {% if item.title %}
-                                            <div class="heading heading-medium">{{ item.title|raw }}</div>{% endif %}
-                                        {% if item.desc %}
-                                            <div><span class="heading heading-sub">{{ item.desc|raw }}</span></div>{% endif %}
+                                        {% if item.line1 %}
+                                            <h1><span class="heading heading-medium">{{ item.line1|raw }}</span><br>{% endif %}
+                                        {% if item.line2 %}
+                                            <span class="heading heading-sub">{{ item.line2|raw }}</span></h1>{% endif %}
                                         {% if item.link %}
                                             <div class="g-owlcarousel-item-link">
                                                 <a target="_self" class="button {{ item.buttonclass|e }}" href="{{ item.link|e }}">

@@ -13,12 +13,14 @@
 			{% for price in particle.prices %}
 				<div {% if price.id %}id="{{ price.id|e }}"{% endif %}
 					 class="g-block {{ price.class }} {{ price.variations }}">
-					<div class="g-content">
-						{% if price.image %}<img src="{{ url(price.image) }}" class="" alt="{{ price.title|e }}" />{% endif %}
-						<div class="heading heading-medium">{{ price.title|raw }}</div>
-						<p>{{ price.description|raw }}</p>
-						<div><span class="heading heading-small">ab</span> <span class="heading heading-medium">{{ price.amount|raw }} €</span></div>
-						<a href="#" class="button">{{ 'Jetzt buchen'|escape }}</a>
+					<div class="g-content g-card">
+						<div class="g-card-content-wrapper">
+							{% if price.image %}<img src="{{ url(price.image) }}" class="w-100" alt="{{ price.title|e }}" width="280" height="185">{% endif %}
+							<h3 class="heading heading-medium">{{ price.title|raw }}</h3>
+							<p>{{ price.description|raw }}</p>
+							<div><span class="heading heading-small">ab</span> <span class="heading heading-medium">{{ price.amount|raw }} €</span></div>
+							<a href="#" class="button center w-100">{{ 'Jetzt buchen'|escape }}</a>
+						</div>
 					</div>
 				</div>
 			{% endfor %}

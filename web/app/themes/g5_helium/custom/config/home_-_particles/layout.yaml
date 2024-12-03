@@ -30,15 +30,18 @@ layout:
     -
       - custom-9485
   /above/: {  }
-  /expanded/:
-    -
-      - contenttabs-3854
+#  expanded:
+#    -
+#      - contenttabs-3854
   /container-main/:
     -
       -
         'mainbar 75': {  }
       -
         'sidebar 25': {  }
+  expanded:
+    -
+      - contenttabs-3854
   footer: {  }
   offcanvas: {  }
 structure:
@@ -81,7 +84,7 @@ structure:
     type: section
     attributes:
       boxed: ''
-      class: ''
+      class: g-flushed
       variations: ''
   info:
     type: section
@@ -93,7 +96,7 @@ structure:
     type: section
     attributes:
       boxed: ''
-      class: ''
+      class: g-flushed
       variations: ''
   above:
     type: section
@@ -101,8 +104,10 @@ structure:
       boxed: ''
   expanded:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
   mainbar:
     type: section
     subtype: main
@@ -133,58 +138,53 @@ content:
       items:
         -
           class: ''
-          image: 'gantry-media://2024/07/hero-screen.jpg'
-          title: 'Dein Haustier verdient seinen eigenen'
-          desc: 'Walk of Fame'
-          link: 'http://gantry.org/downloads'
+          image: 'gantry-media://owlcarousel/slide_01.png'
+          line1: 'Dein Haustier verdient seinen eigenen'
+          line2: 'Walk of Fame'
+          link: '#g-expanded'
           linktext: 'Frag mich mal'
-          buttonclass: ''
           disable: '0'
           name: 'Item 1'
         -
           class: ''
-          image: 'gantry-media://2024/07/IMG_9489.png'
-          title: 'Dein Haustier verdient seinen eigenen'
-          desc: 'Walk of Fame'
-          link: 'http://gantry.org/downloads'
+          image: 'gantry-media://owlcarousel/slide_02.png'
+          line1: 'Dein Haustier verdient seinen eigenen'
+          line2: 'Walk of Fame'
+          link: '#g-expanded'
           linktext: 'Frag mich mal'
-          buttonclass: ''
           disable: '0'
           name: 'Item 2'
         -
           class: ''
-          image: 'gantry-media://2024/07/IMG_2275.png'
-          title: 'Dein Haustier verdient seinen eigenen'
-          desc: 'Walk of Fame'
-          link: 'http://gantry.org/downloads'
+          image: 'gantry-media://owlcarousel/slide_03.png'
+          line1: 'Dein Haustier verdient seinen eigenen'
+          line2: 'Walk of Fame'
+          link: '#g-expanded'
           linktext: 'Frag mich mal'
-          buttonclass: ''
           disable: '0'
           name: 'Item 3'
         -
           class: ''
-          image: 'gantry-media://2024/07/IMG_7560.png'
-          title: 'Dein Haustier verdient seinen eigenen'
-          desc: 'Walk of Fame'
-          link: 'http://gantry.org/downloads'
+          image: 'gantry-media://owlcarousel/slide_04.png'
+          line1: 'Dein Haustier verdient seinen eigenen'
+          line2: 'Walk of Fame'
+          link: '#g-expanded'
           linktext: 'Frag mich mal'
-          buttonclass: ''
           disable: '0'
           name: 'Item 4'
         -
           class: ''
-          image: 'gantry-media://2024/07/IMG_5474 1.png'
-          title: 'Dein Haustier verdient seinen eigenen'
-          desc: 'Walk of Fame'
-          link: 'http://gantry.org/downloads'
+          image: 'gantry-media://owlcarousel/slide_05.png'
+          line1: 'Dein Haustier verdient seinen eigenen'
+          line2: 'Walk of Fame'
+          link: '#g-expanded'
           linktext: 'Frag mich mal'
-          buttonclass: ''
           disable: '0'
           name: 'Item 5'
   2cols_w_image-5354:
     title: 'Two cols w/image'
     attributes:
-      image: 'gantry-media://2024/07/85be8d9e-d82b-4faf-b25d-97c21db0ebd4-1.png'
+      image: 'gantry-media://mics/da-bin-ich.png'
       link: /da-bin-ich
       linktext: 'Da bin ich'
       description: 'Willkommen in der Welt, in der Ihr Liebling zum Superstar wird! Ich bin Julia - eine Fotografin und Hundefachfrau mit Erfahrung in der Erstellung fröhlicher und bunter Fotoshootings mit Ihren Haustieren. In meiner Arbeit ist das Wichtigste für mich das Wohlbefinden und die Freude Ihrer Lieblinge. Ich freue mich darauf, Sie in meinem Fotostudio in Werdohl oder kann zu Ihnen an jeden Ort in Nordrhein-Westfalen kommen und meine magischen Werkzeuge mitbringen. Lassen Sie Ihre Lieblinge eine Rolle in einem bunten Spektakel spielen! Und ich werde Ihnen helfen, begeisterte Zuschauer zu werden.'
@@ -194,7 +194,7 @@ content:
       linktext: 'Was kostet'
       prices:
         -
-          image: 'gantry-media://2024/07/studio.png'
+          image: 'gantry-media://pricing/studio.png'
           description: 'Kein Weg ist mir zu weit, um deinen pelzigen Gefährten ins beste Licht zu rücken. Meine mobile Ausrüstung bringt die Magie des Studios direkt zu dir nach Hause – für unvergessliche Bilder voller Liebe und Freude.'
           amount: '200'
           id: ''
@@ -202,7 +202,7 @@ content:
           variations: ''
           title: Studio
         -
-          image: 'gantry-media://2024/07/momente.png'
+          image: 'gantry-media://pricing/momente.png'
           description: 'Natürliche Momente, unvergesslich festgehalten Ob im grünen Gras oder während des Lieblingsspiels – ich fange die Essenz deines Tieres in seiner gewohnten Umgebung ein. Authentisch und lebendig.'
           amount: '150'
           id: ''
@@ -210,7 +210,7 @@ content:
           variations: ''
           title: Momente
         -
-          image: 'gantry-media://2024/07/reportage.png'
+          image: 'gantry-media://pricing/reportage.png'
           description: 'Als stille Beobachterin halte ich die Highlights und die unbezahlbaren kleinen Momente deines besonderen Anlasses fest. Dein Event wird durch meine Linse lebendig und bleibt für immer in Erinnerung.'
           amount: '200'
           id: ''
@@ -226,55 +226,70 @@ content:
       link: /erfolg
       items:
         -
-          image: 'gantry-media://2024/07/1-1.png'
+          thumbnail: 'gantry-media://features/theater-machen-400x386.jpg'
+          image: 'gantry-media://features/theater-machen.jpg'
           imageposition: left
           desc: 'Hier finden Sie eine Welt voller Emotionen, die in Momenten des Theaterspiels, der Lebensfreude und unerwarteten Momenten festgehalten werden. Jedes Bild erzählt seine eigene Geschichte, die mit dem Objektiv meiner Kamera aufgenommen wurde, und spiegelt die einzigartige Persönlichkeit und Schönheit unserer Begleittiere wider.'
           images:
             -
-              image: 'gantry-media://2024/10/20240321-IMG_3853.jpg'
+              thumbnail: 'gantry-media://features/erfolg-01-300x199.jpg'
+              image: 'gantry-media://features/erfolg-01.jpg'
+              alttext: Kanninchen
               text: 'New item'
             -
-              image: 'gantry-media://2024/10/20240328-IMG_4538.jpg'
+              thumbnail: 'gantry-media://features/erfolg-02-300x233.jpg'
+              image: 'gantry-media://features/erfolg-02.jpg'
               text: 'New item'
             -
-              image: 'gantry-media://2024/10/20240530-IMG_9140.jpg'
+              thumbnail: 'gantry-media://features/erfolg-03-303x400.jpg'
+              image: 'gantry-media://features/erfolg-03.jpg'
               text: 'New item'
           name: 'Theater machen'
         -
-          image: 'gantry-media://2024/10/20180902-IMG_3358-редакт.jpg'
+          thumbnail: 'gantry-media://features/lebhafte-400x265.jpg'
+          image: 'gantry-media://features/lebhafte.jpg'
           imageposition: right
           desc: ''
           images:
             -
-              image: 'gantry-media://2024/10/20240802-IMG_9951.jpg'
+              thumbnail: 'gantry-media://features/erfolg-04-300x198.jpg'
+              image: 'gantry-media://features/erfolg-04.jpg'
+              alttext: ''
               text: 'New item'
             -
-              image: 'gantry-media://2024/10/20180727-IMG_6870.jpg'
+              thumbnail: 'gantry-media://features/erfolg-05-300x216.jpg'
+              image: 'gantry-media://features/erfolg-05.jpg'
+              alttext: ''
               text: 'New item'
           name: Lebhafte
         -
-          image: 'gantry-media://2024/10/20220514-IMG_3459.jpg'
+          thumbnail: 'gantry-media://features/erwischt-400x400.jpg'
+          image: 'gantry-media://features/erwischt.jpg'
           imageposition: left
           desc: ''
           images:
             -
-              image: 'gantry-media://2024/10/20231028-IMG_9053-редакт.jpg'
+              thumbnail: 'gantry-media://features/erfolg-06-269x400.jpg'
+              image: 'gantry-media://features/erfolg-06.jpg'
+              alttext: ''
               text: 'New item'
             -
-              image: 'gantry-media://2024/10/20240420-IMG_7306.jpg'
+              thumbnail: 'gantry-media://features/erfolg-07-300x200.jpg'
+              image: 'gantry-media://features/erfolg-07.jpg'
+              alttext: ''
               text: 'New item'
           name: Erwischt
   testimonials_carousel-4183:
     title: 'Testimonials Carousel'
     attributes:
       title: 'Man über mich'
-      link: /
+      link: /da-bin-ich/man-uber-mich/
       nav: enable
       imageOverlay: disable
       items:
         -
           class: ''
-          image: 'gantry-media://2024/07/testimonial1.jpg'
+          image: 'gantry-media://testimonials/testimonial1.jpg'
           date: 10.02.2024
           desc: 'Überwältigt von der Hundefotografin Julia: Ihre Bilder sind wahre Kunst, die Seelen meiner zwei Hunde und meines Katers einfangen. Mit Talent, Leidenschaft und einem Auge fürs Detail macht sie jede Session einzigartig. Unvergessliche Erinnerungen, absolut empfehlenswert!'
           link: 'https://www.instagram.com/kinolog.lapki.nrw'
@@ -283,7 +298,7 @@ content:
           name: 'Olesya Poruchnyk'
         -
           class: ''
-          image: 'gantry-media://2024/07/testimonial2.jpg'
+          image: 'gantry-media://testimonials/testimonial2.jpg'
           date: 17.10.2023
           desc: 'Hallo, danke für unsere Fotos mit Lunochka 😍 Die Aufnahmen sind so lebendig geworden, mir hat alles sehr gefallen, man sieht, dass es Ihnen viel Freude bereitet und man spürt neben Ihrem Professionalismus auch eine große Liebe zu Tieren ☺️ Ich erinnere mich, wie Sie damals noch mit einem Gips am Bein gearbeitet haben, aber das hat Sie nicht davon abgehalten, die schönsten und erfolgreichsten Aufnahmen von Luna und den anderen Hunden zu machen 🙈😍 Ich bewundere Ihren Beruf, Sie machen Hundebesitzer glücklicher 🥰 Ich wünsche Ihnen mehr Ideen und mehr Möglichkeiten zu deren Umsetzung 🙏🏻☺️'
           link: 'https://www.instagram.com/promama_lera'
@@ -292,7 +307,7 @@ content:
           name: promama_lera
         -
           class: ''
-          image: 'gantry-media://2024/07/testimonial3.jpg'
+          image: 'gantry-media://testimonials/testimonial3.jpg'
           date: 28.03.2024
           desc: 'Liebe Julia hat uns heute besucht! Sie kam zu uns nach Hause und machte Fotos mit meinen Kaninchen. Zuerst hat sie alle ihre Sachen für das Shooting mitgebracht und dann haben wir alles an seinen Platz gebracht. Es ist sehr lustig, wie viele interessante Dinge sie dabei hatte. Unterschiedliche Hintergründe und allerlei Kleinigkeiten. Wir haben verschiedene Motive ausprobiert, es war toll, die Kaninchen spielten die Hauptrolle und es hat sogar Spaß gemacht. Sehr einfühlsame und nette Fotografin! Wir freuen uns darauf, Julia wiederzusehen!'
           link: 'https://www.instagram.com/vomhoennetal'
@@ -301,7 +316,7 @@ content:
           name: vomhoennetal
         -
           class: ''
-          image: 'gantry-media://2024/07/testimonial4.jpg'
+          image: 'gantry-media://testimonials/testimonial4.jpg'
           date: 29.09.2024
           desc: 'Ich bin absolut begeistert von der Hundefotografin Julia, die schon seit einiger Zeit die besonderen Momente unserer vierbeinigen Freunde festhält. Ihre Arbeit ist einfach beeindruckend und hat mir persönlich sehr geholfen. Die Fotos, die sie macht, sind mehr als nur Bilder – sie sind echte Kunstwerke, die Persönlichkeit und die einzigartigen Charakterzüge jedes Hundes einfangen. Besonders während der Gruppenstunden in unserer Hundeschule Lapki in Mettmann beweist sie immer wieder aufs Neue ihr außergewöhnliches Talent und Gespür für den richtigen Moment. Jedes Mal, wenn sie bei uns ist, freue ich mich schon auf die wunderbaren Fotos, die entstehen. Sie hat nicht nur ein gutes Auge für die besonderen Momente, sondern versteht es auch, eine entspannte Atmosphäre zu schaffen, in der sich sowohl Hunde...'
           link: 'https://lapki.nrw'
@@ -311,7 +326,7 @@ content:
   custom-9685:
     title: 'Custom HTML'
     attributes:
-      html: "<div class=\"g-grid\">\n\t<div class=\"g-block\">\n\t\t<div class=\"g-content\">\n\t\t\t<p><h1>100%</h1></p>\n\t\t\t<p>Rabatt</p>\n\t\t</div>\n\t</div>\n\t<div class=\"g-block\">\n\t\t<h4>Ein beliebiges Fotoshooting für Dein aus dem Tierheim adoptiertes Tier</h4>\n\t\t<a href=\"#\" class=\"button\">Frag mich mal</a>\n\t</div>\n</div>"
+      html: "<div class=\"g-grid\">\n\t<div class=\"g-block ticket\">\n\t\t<div class=\"g-content center p-2\">\n\t\t\t<div class=\"heading heading-2xlarge\">100%</div>\n\t\t\t<div class=\"heading heading-large\">Rabatt</div>\n\t\t</div>\n\t</div>\n\t<div class=\"g-block d-flex align-items-center\">\n\t\t<div class=\"g-content p-2\">\n\t\t\t<div class=\"heading heading-medium mb-2\">Ein beliebiges Fotoshooting für Dein aus dem Tierheim adoptiertes Tier</div>\n\t\t<a href=\"#g-expanded\" class=\"button\">Frag mich mal</a>\n\t\t</div>\n\t</div>\n</div>"
   content_repeater-7607:
     title: 'Content repeater'
     attributes:
@@ -321,7 +336,7 @@ content:
         -
           class: ''
           name: ''
-          image: 'gantry-media://2024/07/image-8.png'
+          image: 'gantry-media://mics/tierheimhilfe.png'
           imagealt: Tierheimhilfe
           date: ''
           desc: 'Ich finde es wichtig, mein Herz und meine Fähigkeiten für einen guten Zweck einzusetzen. Deshalb verbringe ich auch Zeit als Freiwilliger in Tierheimen – fotografiere die Schützlinge, spiele mit den Katzen, gehe mit den Hunden spazieren und reinige die Käfige. Einen Teil der Einnahmen spende ich ebenfalls an die Tierheime. Meine Kunden entscheiden selbst, welchem Tierheim das Geld zugutekommt. Gemeinsam leisten wir einen Beitrag zur Unterstützung bedürftiger Tiere.'
@@ -332,14 +347,18 @@ content:
   custom-9485:
     title: 'Custom HTML'
     attributes:
-      html: "<div class=\"g-grid\">\n\t<div class=\"g-block size-100\">\n\t\t<div class=\"g-content\">\n\t\t\t<h2>50% Rabatt</h2>\n\t\t</div>\n\t</div>\n\t<div class=\"g-block size-100\">\n\t\t<h4>beim Fotoshootings am Geburtstag Deines Tieres</h4>\n\t\t<a href=\"#\" class=\"button\">Frag mich mal</a>\n\t</div>\n</div>"
+      html: "<div class=\"g-grid\">\n\t<div class=\"g-block size-100 center ticket\">\n\t\t<div class=\"g-content\">\n\t\t\t<div class=\"heading heading-xlarge\">50% Rabatt</div>\n\t\t</div>\n\t</div>\n\t<div class=\"g-block size-100\">\n\t\t<div class=\"g-grid\">\n\t\t\t<div class=\"g-block d-flex justify-content-center align-items-center p-2\">\n\t\t\t\t<div class=\"heading heading-medium align-right\">beim Fotoshootings am Geburtstag Deines Tieres</div>\n\t\t\t</div>\n\t\t\t<div class=\"g-block d-flex justify-content-center align-items-center\">\n\t\t\t\t<a href=\"#g-expanded\" class=\"button\">Frag mich mal</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
   contenttabs-3854:
     title: 'Content Tabs'
     attributes:
+      title: Kontaktformular
+      link: /kontakt
+      desc: "<p>Möchten Sie ein besonderes Fotoshooting organisieren oder einfach mehr erfahren? Erzählen Sie mir, wen Sie auf den Fotos sehen möchten — Ihre süßen Haustiere und welche genau, alleine oder mit ihren Lieblingsmenschen. Vergessen Sie nicht anzugeben, wo Sie leben und welche Zeit Ihnen am besten passt. Haben Sie besondere Wünsche oder Ideen für das Thema des Shootings?</p>\n\n<p>Dies ist nur eine Informationsanfrage, die Sie zu nichts weiter verpflichtet. Ich freue mich darauf, mehr über Ihre Wünsche zu erfahren und die Details Ihrer einzigartigen Fotosession zu besprechen!</p>\n\n<p>* zeigt erforderliche Felder an</p>"
+      image: 'gantry-media://mics/kontaktformular.png'
       items:
         -
-          content: "<p>Gantry 5 includes a new, powerful Menu editor that makes menu organization,\nparticle and module injection, and visual enhancements a breeze. Here are just\na handful of things you can do with Gantry 5’s powerful Menu Editor.</p>\n<div class=\"g-grid size-100\">\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>\n                FontAwesome Icons\n            </li>\n            <li>\n                Easy Module Injection\n            </li>\n            <li>\n                Simple Particle Injection\n            </li>\n            <li>\n                Drag-and-drop Functionality\n            </li>\n            <li>\n                Per-item CSS Classes\n            </li>\n            <li>\n                Submenu Column Control\n            </li>\n        </ul>\n    </div>\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>\n                Easy Organization / Reordering\n            </li>\n            <li>\n                Link Target Designation\n            </li>\n            <li>\n                Multiple Dropdown Styles\n            </li>\n            <li>\n                Per-item Image Support\n            </li>\n            <li>\n                Subtitles\n            </li>\n            <li>\n                Non-destructive\n            </li>\n        </ul>\n    </div>\n</div>\n<div class=\"g-grid\">\n    <div class=\"g-block size-100\">\n        Find out more about using the Menu Editor in our <a href=\"http://docs.gantry.org/gantry5/configure/menu-editor\">documentation</a>.\n    </div>\n</div>"
-          title: 'Menu Editor'
+          content: '[contact-form-7 id="cfd3b56" title="Kontaktformular"]'
+          title: 'Anfrage zur dein Tierfotografin'
         -
-          content: "<p>The Layout Manager makes it easier than ever to arrange and customize your users’ experience with drag-and-drop simplicity from start to finish. A handful of the many features found in the Layout Manager are listed below.</p>\n<div class=\"g-grid size-100\">\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>Drag-and-drop Functionality</li>\n            <li>Unlimited Items Per Row</li>\n            <li>Unlimited Rows Per Section</li>\n            <li>Easy Widget Position Placement</li>\n            <li>Resize Items with Simple Sliders</li>\n            <li>Per-section CSS Classes and Tag Attributes</li>\n        </ul>\n    </div>\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>Per-block CSS Classes, Variations, and Tag Attributes</li>\n            <li>Quick Preset Loading</li>\n            <li>Undo and Redo</li>\n            <li>Access to Easy-to-use Particles</li>\n            <li>Intuitive Visual Interface</li>\n            <li>Touch-screen Friendly</li>\n        </ul>\n    </div>\n</div>\n<div>Find out more about using the Layout Manager in our <a href=\"http://docs.gantry.org/gantry5/configure/layout-manager\">documentation</a>.</div>"
-          title: 'Layout Manager'
+          content: '<div>Coming soon</div>'
+          title: 'Anfrage fürdein Fotoshooting'
